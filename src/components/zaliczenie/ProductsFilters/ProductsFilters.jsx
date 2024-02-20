@@ -12,7 +12,7 @@ const ProductsFilters = (props) => {
       <form onChange={foodFilter}>
         <div className={styles.Wrapper}>Products Filters</div>;
         Wyszukaj po nazwie produktu:
-        <input type="text" id="name" name="filterName" />
+        <input type="text" name="filterName" />
         Kategorie:
         <select name="category">
           <option></option>
