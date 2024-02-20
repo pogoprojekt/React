@@ -13,7 +13,7 @@ function App() {
 
   const handleAddToShoppingCart = (itemToAdd) => {
     shoppingList.push(itemToAdd);
-    setShoppingList([...shoppingList]); // i ,id:MathRandom()
+    setShoppingList([...shoppingList]); 
   };
 
   const handleDeleteFromShoppingCart = (itemIndexToDelete) => {
