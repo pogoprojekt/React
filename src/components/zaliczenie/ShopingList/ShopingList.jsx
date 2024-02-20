@@ -3,7 +3,7 @@ import { useState } from "react";
 
 const ShoppingList = (props) => {
   const { shoppingList, deleteProd } = props;
-  const [prodStyle, setProdStyle] = useState([]); //id
+  const [prodStyle, setProdStyle] = useState([]);
 
   const handleRightMouseButtonClick = (event, idx) => {
     event.preventDefault();
@@ -28,9 +28,9 @@ setProdStyle([...prodStyle]);
           <li
 
             style={{
-              textDecoration: prodStyle[index] ? prodStyle[index] : "none", //.inculdes(id)
+              textDecoration: prodStyle[index] ? prodStyle[index] : "none", 
           }}
-            // key={index}
+            key={prod.nazwa}
             onContextMenu={(e) => handleRightMouseButtonClick(e, index)}
             onClick={() => handleDeleteProd(index)}
           >
