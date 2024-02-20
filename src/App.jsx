@@ -22,7 +22,6 @@ function App() {
   };
 
   const handleFoodFilter = (e) => {
-    console.log(e.currentTarget.filterName);
     const nameFilter = e.currentTarget.filterName.value.toLowerCase();
     const categoryFilter = e.currentTarget.category.value;
     const isFoodProduct = e.currentTarget.isFoodProduct.checked;
