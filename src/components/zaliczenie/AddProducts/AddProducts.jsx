@@ -10,7 +10,7 @@ const AddProducts = (props) => {
   });
 
   const handleSubmit = (e) => {
-    e.preventDefault();     //bo odświeża stronę
+    e.preventDefault();  
 
     props.addNewProd(e);
     setFormData({
@@ -22,11 +22,10 @@ const AddProducts = (props) => {
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
-    // const inputValue = type === "checkbox" ? checked : value;
 
     setFormData({
       ...formData,
-      [name]: type === "checkbox" ? checked : value, // inne niż[name] nie przytrzymuje wartosci
+      [name]: type === "checkbox" ? checked : value, 
     });
   };
 
