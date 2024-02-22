@@ -30,7 +30,7 @@ setProdStyle([...prodStyle]);
             style={{
               textDecoration: prodStyle[index] ? prodStyle[index] : "none", 
           }}
-            key={prod.nazwa}
+            key={index}
             onContextMenu={(e) => handleRightMouseButtonClick(e, index)}
             onClick={() => handleDeleteProd(index)}
           >
